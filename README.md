@@ -1,4 +1,7 @@
 # GitDay
 
-Use git-log as small weibo
+Use git-log do as small weibo
 
+```
+$ ./gitday.sh > index.html
+```
