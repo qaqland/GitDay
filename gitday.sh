@@ -14,6 +14,10 @@ cat <<EOF
 		margin: 0 auto;
 		font-family: Tahoma, Verdana, Arial, sans-serif;
 	}
+	p em {
+		display: block;
+		text-align: right;
+	}
 	</style>
 <head>
 
@@ -22,11 +26,11 @@ cat <<EOF
 EOF
 
 template=$(cat <<EOF
-<section id="%h">
-%ad
-%s
+<p id="%h">
+<b>%s</b>
 %b
-</section>
+<em>%ad</em>
+</p>
 EOF
 )
 
